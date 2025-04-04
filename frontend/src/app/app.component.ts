@@ -19,8 +19,7 @@ export class AppComponent {
 `Your response should only be the cover letter.
 The cover letter should follow this format:
 
-[Your Name]  
-[Your Address]  
+[Your Name]
 [City, State, Zip Code]  
 [Your Email Address]  
 [Your Phone Number]  
@@ -67,7 +66,7 @@ Best Regards,
       formData.append('jobDescription', this.jobDescription);
       formData.append('coverTemplate', this.coverTemplate); // Send custom prompt
 
-      this.http.post<any>('http://localhost:5687/resume/generate', formData).subscribe((response: any) => {
+      this.http.post<any>('http://localhost:5687/job-assist/generate-cl', formData).subscribe((response: any) => {
         this.setGeneratedResults(response.generatedCoverLetter);
         console.log(response.generatedCoverLetter);
   

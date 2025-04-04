@@ -13,7 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/job-search-assistant",
+            "outputPath": "dist/job-assist",
+            "baseHref": "/job-assist/",
+            "deployUrl": "/job-assist/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -21,7 +23,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.png",
               "src/assets"
             ],
             "styles": [
@@ -80,7 +82,7 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.png",
               "src/assets"
             ],
             "styles": [
