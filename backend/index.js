@@ -59,7 +59,6 @@ app.post('/api/generate', upload.single('resume'), async (req, res) => {
     Write a cover letter based on the following resume:
     ${resumeText}
 
-    Your response should only be the cover letter which should follow this format minus the brackets:
     ${coverTemplate}
   `;
   try {

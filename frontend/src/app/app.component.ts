@@ -15,7 +15,11 @@ import { sample } from 'rxjs';
 export class AppComponent {
 
   isLoading: boolean = false;
-  coverTemplate: string = `[Your Name]  
+  coverTemplate: string = 
+`Your response should only be the cover letter.
+The cover letter should follow this format:
+
+[Your Name]  
 [Your Address]  
 [City, State, Zip Code]  
 [Your Email Address]  
