@@ -92,5 +92,5 @@ out/
 .vscode/
 .idea/
 
-# databsee
-invoiceApp.db
+# Angular
+.angular/
