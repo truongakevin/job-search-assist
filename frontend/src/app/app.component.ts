@@ -67,7 +67,7 @@ Best Regards,
       formData.append('jobDescription', this.jobDescription);
       formData.append('coverTemplate', this.coverTemplate); // Send custom prompt
 
-      this.http.post<any>('http://localhost:5687/api/generate', formData).subscribe((response: any) => {
+      this.http.post<any>('http://localhost:5687/resume/generate', formData).subscribe((response: any) => {
         this.setGeneratedResults(response.generatedCoverLetter);
         console.log(response.generatedCoverLetter);
   

@@ -30,7 +30,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 console.log(process.env.GEMINI_API_KEY);
 
 // Handle the POST request for file and job description
-app.post('/api/generate', upload.single('resume'), async (req, res) => {
+app.post('/api/resume/generate', upload.single('resume'), async (req, res) => {
   const { jobDescription, coverTemplate } = req.body; // Receive the custom prompt
   const resumeFile = req.file;
 
