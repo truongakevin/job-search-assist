@@ -16,7 +16,8 @@ export class AppComponent {
 
   isLoading: boolean = false;
   coverTemplate: string = 
-`Your response should only be the cover letter.
+`Write a cover letter based on the provided resume and job description.
+Your response should only be the cover letter.
 The cover letter should follow this format:
 
 [Your Name]

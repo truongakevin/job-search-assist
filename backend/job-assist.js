@@ -56,7 +56,7 @@ app.post('/job-assist/generate-cl', upload.single('resume'), async (req, res) =>
     Given the following job description:
     ${jobDescription}
 
-    Write a cover letter based on the following resume:
+    And based on the following resume:
     ${resumeText}
 
     ${coverTemplate}
